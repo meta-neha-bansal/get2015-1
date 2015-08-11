@@ -6,7 +6,7 @@ public class TestJUnit2 {
 	
 	PF_assignment2_Q2 pf=new PF_assignment2_Q2();
 	
-	String spaceString=pf.spaces(1,3);
+	String spaceString=pf.spaces(1);
 	String numberString=pf.numbers(1,5);
 	String str=pf.pyramid(3);
 	

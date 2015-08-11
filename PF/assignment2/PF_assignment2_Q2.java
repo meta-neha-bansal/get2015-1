@@ -19,21 +19,21 @@
 		return finalString;  //return the final string
 	}
 	//below code is for return string of spaces.
-	public String spaces(int n)
+	public String spaces(int rowNumber)
 	{
 		String str="";
 		int i=0;
-		for(i=1;i<n;i++)
+		for(i=1;i<rowNumber;i++)
 			str+=" ";
 		return str;	
 		
 	}
 	//below code is for return string of numbers.
-	public String numbers(int n,int row)
+	public String numbers(int rowNumber,int totalRows)
 	{
 		String str="";
 		int i=0;
-		for(i=1;i<=row-n+1;i++)
+		for(i=1;i<=totalRows-rowNumber+1;i++)
 			str+=i;
 		return str;		
 	}

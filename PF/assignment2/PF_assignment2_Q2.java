@@ -1,19 +1,24 @@
-
- 
-public class PF_assignment2_Q2 {
-	public String pyramid(int n)
+/*This program is mainly for displaying these type of pattern
+    12345
+     1234
+      123
+       12
+        1
+*/
+ public class PF_assignment2_Q2 {
+	public String pyramid(int row)
 	{
 		int i=0;
 		String str1="",str2="",finalString="";
-		for(i=1;i<=n;i++)
+		for(i=1;i<=row;i++)
 		{
-			str1=spaces(i,n);
-			str2=numbers(i,n);
+			str1=spaces(i,n);  //call the function of space for each row.
+			str2=numbers(i,n);  //call the function of number for each row.
 			finalString+=str1+str2+"\n";
-			//System.out.println(str1+str2);
 		}
-		return finalString;
+		return finalString;  //return the final string
 	}
+	//below code is for return string of spaces.
 	public String spaces(int row,int n)
 	{
 		String str="";
@@ -23,6 +28,7 @@ public class PF_assignment2_Q2 {
 		return str;	
 		
 	}
+	//below code is for return string of numbers.
 	public String numbers(int row,int n)
 	{
 		String str="";

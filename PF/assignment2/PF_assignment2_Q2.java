@@ -12,28 +12,28 @@
 		String str1="",str2="",finalString="";
 		for(i=1;i<=row;i++)
 		{
-			str1=spaces(i,n);  //call the function of space for each row.
-			str2=numbers(i,n);  //call the function of number for each row.
+			str1=spaces(i,row);  //call the function of space for each row.
+			str2=numbers(i);  //call the function of number for each row.
 			finalString+=str1+str2+"\n";
 		}
 		return finalString;  //return the final string
 	}
 	//below code is for return string of spaces.
-	public String spaces(int row,int n)
+	public String spaces(int n)
 	{
 		String str="";
 		int i=0;
-		for(i=1;i<row;i++)
+		for(i=1;i<n;i++)
 			str+=" ";
 		return str;	
 		
 	}
 	//below code is for return string of numbers.
-	public String numbers(int row,int n)
+	public String numbers(int n,int row)
 	{
 		String str="";
 		int i=0;
-		for(i=1;i<=n-row+1;i++)
+		for(i=1;i<=row-n+1;i++)
 			str+=i;
 		return str;		
 	}

@@ -9,7 +9,6 @@ public class PF_assignment2_Q1 {
 		{
 			str1=spaces(i,n);
 			str2=numbers(i,n);
-			
 			finalString+=str1+str2+"\n";
 		}
 		for(i=n-1;i>0;i--)

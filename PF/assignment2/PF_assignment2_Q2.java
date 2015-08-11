@@ -12,8 +12,8 @@
 		String str1="",str2="",finalString="";
 		for(i=1;i<=row;i++)
 		{
-			str1=spaces(i,row);  //call the function of space for each row.
-			str2=numbers(i);  //call the function of number for each row.
+			str1=spaces(i);  //call the function of space for each row.
+			str2=numbers(i,row);  //call the function of number for each row.
 			finalString+=str1+str2+"\n";
 		}
 		return finalString;  //return the final string

@@ -17,15 +17,15 @@ public class PF_assignment2_Q1 {
 		//below code is for upper half of pattern
 		for(i=1;i<=row;i++)
 		{
-			str1=spaces(i,n);                //calling function of space for each row
-			str2=numbers(i,n);              //calling function of numbers each row
+			str1=spaces(i,row);                //calling function of space for each row
+			str2=numbers(i);              //calling function of numbers each row
 			finalString+=str1+str2+"\n";      
 		}
 		//below code is for lower half of pattern
 		for(i=row-1;i>0;i--)
 		{
-			str1=spaces(i,n);
-			str2=numbers(i,n);
+			str1=spaces(i,row);
+			str2=numbers(i);
 			finalString+=str1+str2;
 			if(i!=1)
 				finalString+="\n";
@@ -34,23 +34,23 @@ public class PF_assignment2_Q1 {
 		
 	}
 	//below function is to return string of spaces.
-	public String spaces(int row,int n)
+	public String spaces(int rowNumber,int totalRows)
 	{
 		String str="";
 		int i=0;
-		for(i=row;i<n;i++)
+		for(i=rowNumber;i<totalRows;i++)
 			str+=" ";
 		return str;	
 		
 	}
 	//below function is to return string of numbers.
-	public String numbers(int row,int n)
+	public String numbers(int rowNumber)
 	{
 		String str="";
 		int i=0;
-		for(i=1;i<=row;i++)
+		for(i=1;i<=rowNumber;i++)
 			str+=i;
-		for(i=row-1;i>0;i--)
+		for(i=rowNumber-1;i>0;i--)
 			str+=i;
 		return str;		
 	}

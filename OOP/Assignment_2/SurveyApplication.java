@@ -28,8 +28,8 @@ public class SurveyApplication {
 			BufferedReader brQuestion;
 			brQuestion = new BufferedReader(new FileReader("D:\\Questions.txt"));
 			while ((line = brQuestion.readLine()) != null
-					&& StringUtils.isNotEmpty(line)) // read question from text
-														// file
+					&& StringUtils.isNotEmpty(line)) // read question from text file
+														
 			{
 				String[] lineArray = line.split(","); // use comma as separator
 				int questionNo = Integer.parseInt(lineArray[0].trim());
@@ -60,20 +60,20 @@ public class SurveyApplication {
 			String answer = "yes";
 			do {
 				noOfParticipent++;
-				System.out.println("Enter Name Of Participent"); // ask name of
-																	// participent
+				System.out.println("Enter Name Of Participent"); // ask name of participent
+																	
 				nameOfParticipent = scanner.next();
 				System.out.println("Enter age of Partcipent");
 				ageOfParticipent = scanner.nextInt();
 				System.out.println("Enetr id of Participent");
 				idOfParticipent = scanner.nextInt();
 				participentArrayList.add(new Participent(nameOfParticipent,
-						ageOfParticipent, idOfParticipent)); // initialize
-																// object of
-																// Participent
-																// class and add
-																// them in
-																// arraylist
+						ageOfParticipent, idOfParticipent)); // initialize object of Participent class and add them in arraylist
+																 
+																 
+																 
+																 
+																
 				ArrayList<Answer> answerArrayList = new ArrayList<Answer>();
 
 				for (int i = 0; i < questionArrayList.size(); i++) {
@@ -102,30 +102,30 @@ public class SurveyApplication {
 
 					} else
 						answerArrayList.add(new Answer(st.getQuestionNo(),
-								answerGivenByUser, st.getQuestionType())); // initialize
-																			// object
-																			// of
-																			// Answer
-																			// class
-																			// and
-																			// add
-																			// them
-																			// in
-																			// arraylist
+								answerGivenByUser, st.getQuestionType()));     // initialize
+												        	// object
+														// of
+												        	// Answer
+														// class
+														// and
+														// add
+												        	// them
+														// in
+														// arraylist
 					System.out.println();
 
 				}
-				hmap.put(noOfParticipent, answerArrayList); // put the arraylist
-															// of answer in
-															// hashmap
+				hmap.put(noOfParticipent, answerArrayList);            // put the arraylist
+									        	// of answer in
+											// hashmap
 
-				System.out.println("Do you want to continue"); // check whether
-																// there is any
-																// other
-																// participant
-																// who take to
-																// part in
-																// survey or not
+				System.out.println("Do you want to continue");         // check whether
+											// there is any
+											// other
+											// participant
+											// who take to
+									        	// part in
+											// survey or not
 				answer = scanner.next();
 			} while (answer.equalsIgnoreCase("Yes"));
 			scanner.close();
@@ -146,9 +146,9 @@ public class SurveyApplication {
 				int choice1 = 0, choice2 = 0, choice3 = 0, choice4 = 0;
 				Question question = questionArrayList.get(j);
 				if (question.getQuestionType()
-						.equalsIgnoreCase("Single Select")) // if the question
-															// is of single
-															// select type
+						.equalsIgnoreCase("Single Select"))     // if the question
+											// is of single
+											// select type
 				{
 					Set set = hmap.entrySet();
 					Iterator iterator = set.iterator();
@@ -161,7 +161,7 @@ public class SurveyApplication {
 
 						switch (answer.getAnswer()) {
 						case "1":
-							choice1++; // increase the value of choice1 if user
+							choice1++;             // increase the value of choice1 if user
 										// select 1st option of given question
 							break;
 						case "2":
@@ -220,7 +220,7 @@ public class SurveyApplication {
 					int i = st.getQuestionNo() - 1;
 					Question question1 = questionArrayList.get(i);
 					System.out.println("Q" + (i + 1) + "  "
-							+ question1.getQuestionText()); // print the
+							+ question1.getQuestionText());                                 // print the
 															// question
 					System.out.println(st.getAnswer()); // print the answer
 					System.out.println();

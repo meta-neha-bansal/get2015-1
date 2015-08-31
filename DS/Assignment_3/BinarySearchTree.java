@@ -1,7 +1,7 @@
 package assignmentDS_3;
 
 /* 
- * /*Here we implement the Binary search Tree.
+*Here we implement the Binary search Tree.
 * @author  Neha Bansal
 * @version 1.0
 * @since   2015-08-31

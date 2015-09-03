@@ -26,7 +26,7 @@ public class BinarySearchForLeftMostIndex
 		int mid=0;
 		while(min<=max)
 		{
-			 mid=(min+max)/2;
+			mid=(min+max)/2;
 			if(element<arr[mid])
 			{
 				max=mid-1;
@@ -38,9 +38,9 @@ public class BinarySearchForLeftMostIndex
 			}
 			else
 			{
-				 while(mid-1>0&&mid<arr.length&&element==arr[mid-1])
+				while(mid-1>0&&mid<arr.length&&element==arr[mid-1])
 					  mid--;
-				 temp=true;
+				temp=true;
 				break;
 			}
 		}

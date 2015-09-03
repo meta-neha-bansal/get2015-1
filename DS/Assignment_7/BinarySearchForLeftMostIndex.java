@@ -21,33 +21,34 @@ public class BinarySearchForLeftMostIndex
 	 */
 	public int binarySearch(int arr[],int element,int min,int max)
 	{
-		int index=0;  
+		boolean temp=false;  
 		
-		if(min>max)
+		int mid=0;
+		while(min<=max)
 		{
-			return -1;
+			 mid=(min+max)/2;
+			if(element<arr[mid])
+			{
+				max=mid-1;
+			}
+			else if(element>arr[mid])
+			{
+				min=mid+1;
+				
+			}
+			else
+			{
+				 while(mid-1>0&&mid<arr.length&&element==arr[mid-1])
+					  mid--;
+				 temp=true;
+				break;
+			}
 		}
-		
-		int mid=(min+max)/2;
-		
-		if(element<arr[mid])
+		if(temp)
 		{
-			index=binarySearch(arr,element,min,mid-1);
+			return mid;
 		}
-		
-		else if(element>arr[mid])
-		{
-			index=binarySearch(arr,element,mid+1,max);
-		}
-		
-		else
-		{
-		    while(mid-1>0&&mid<arr.length&&element==arr[mid-1])
-				  mid--;
-		    return mid;
-			
-		}
-		return index;
+		return -1;
 		
 	}
 	

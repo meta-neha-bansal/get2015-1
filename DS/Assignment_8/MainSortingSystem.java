@@ -16,7 +16,6 @@ public class MainSortingSystem
 			sc=new Scanner(System.in);	
 			int choice;
 			int LargestElement=0;
-			//SortingSystem sortingSystem=new SortingSystem();
 			int numberOfElements=0;
 			do
 			{

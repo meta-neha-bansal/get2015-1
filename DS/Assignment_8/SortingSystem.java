@@ -194,7 +194,7 @@ public class SortingSystem
 	{
 		LargestElementInArray++;
 		/*
-		 * initialize count array whose size is equal to largest Element of given array
+		 * initialize count array whose size is equal to largest number of element array
 		 * and it will store count of each unique number of array
 		 */
 		int countArray[] = new int[LargestElementInArray];
@@ -222,7 +222,7 @@ public class SortingSystem
 		int j=0;
 		/*
 		 * here we check for each index of count array,
-		 * for each positive value we add the index number of countArray to given array
+		 * for each positive value we add the index number of countArray to elemet array
 		 * and decrease the value at that index in count array by one
 		 */
 		while(i<LargestElementInArray)
@@ -282,10 +282,10 @@ public class SortingSystem
 	
 	
 	/**
-	 * below method is use to store the no of array in given 
-	 * bucket on basis of the number at ith position of each element of array
-	 * @param buckets : its array of queue where element is to store
-	 * @param i : this is for i th position of each element of array
+	 * below method is use to store the no of elemnt array in given 
+	 * bucket on basis of the digit at ith position of each number of element array
+	 * @param buckets : this is the array of queue where element is to store
+	 * @param i : this is for i th position of each number of element array
 	 * @return : return array of queue
 	 */
 	Queue <Integer>[ ] toBucket(Queue <Integer>[ ] buckets,int i)

@@ -42,9 +42,9 @@ public class TreeSortTest
 		
 		Integer expArray[]={1,2,3,3,4,4,5,7,7};
 		for(int i=0;i<inpArray.length;i++)  
-        {
+               {
 			if(arr.get(i)!=expArray[i]) 
-              {
+                        {
 				fail("Method fails");
 				break;
 			}

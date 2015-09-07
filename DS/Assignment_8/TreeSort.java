@@ -84,7 +84,12 @@ public class TreeSort
 		return root;
 			
 	}
-	
+	/**
+	 * below code is to sort numbers in tree using tree sort and store them in arraylist
+	 * @param root : root node of the tree
+	 * @param arr : arraylist where sorted sequence is to store
+	 * @return : return arraylist having numbers in sorted order
+	 * /
 	public ArrayList<Integer> DispalyInSortedOrder(Node root,ArrayList<Integer> arr)
 	{
 		

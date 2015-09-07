@@ -76,7 +76,7 @@ public class SortingSystem
 	
     /**
      * Here we sort the array of numbers using linear sort technique.
-     * @return
+     * @return : return sorted array
      */
 	public int[] linearSort()
 	{

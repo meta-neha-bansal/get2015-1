@@ -148,7 +148,7 @@ public class SortingSystem
 	
 	
 	/**
-	 * 
+	 * below method is swap number at position i and j in element array
 	 * @param i : the index of one element to be swapped.
 	 * @param j : the index of the other element to be swapped. 
 	 */

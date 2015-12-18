@@ -43,7 +43,7 @@ function selectTwo() {
  * Selects all BUTTONS in a document
  */
 function selectThree() {
-	$('button').css('background-color','pink');
+	$(':button').css('background-color','pink');
 }
 
 /*
